@@ -9,8 +9,6 @@ def n(x: str):
 
 print(sum(map(n, a)))
 
-part2 = [x for x in data.split("\n")]
-
 data = open("input.txt").read().split("\n")
 
 stickers = []
@@ -24,5 +22,4 @@ while stop <= len(data):
     stop += 3
     curr.clear()
 
-print(stickers)
 print(sum(map(n, stickers)))
